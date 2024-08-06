@@ -38,7 +38,7 @@ def create_zip(certificates):
 
 # Function for the Home page
 def home():
-    st.image("our_logo.png", use_column_width=True, width=10)
+    st.image("our_logo.png", use_column_width=True)
     st.header("🎉 Welcome to the CertiGen Web App! 🎉")
     st.write("This web app allows you to easily generate certificates for your events or courses on ur given names. Here's how it works:")
     
