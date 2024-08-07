@@ -4,6 +4,7 @@ import pandas as pd
 from io import BytesIO
 import zipfile
 import os
+import openpyxl
 
 # Function to generate certificates
 def generate_certificate(template, names, font_path, font_size, color, y_position):
