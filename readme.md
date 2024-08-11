@@ -68,11 +68,6 @@ CertiGen was developed by **Gashahun Woldeyohannes**. Gashahun is a passionate d
 - [LinkedIn](https://www.linkedin.com/in/gashahun-woldeyohannes)
 - [GitHub](https://github.com/gashu-101)
 
-## 📚 Additional Resources
-
-- **Documentation**: [Link to detailed documentation](#)
-- **Support**: Need help? Visit our [support page](#) or contact us at [support@example.com](mailto:support@example.com).
-
 ---
 
 Enjoy creating beautiful certificates with CertiGen! 🎓✨
