@@ -21,8 +21,6 @@ CertiGen is a user-friendly web app built with Streamlit that allows you to easi
   pip install streamlit pillow pandas openpyxl
   ```
 
-````
-
 ### Running the App
 
 1. **Clone the repository:**
@@ -78,9 +76,3 @@ CertiGen was developed by **Gashahun Woldeyohannes**. Gashahun is a passionate d
 ---
 
 Enjoy creating beautiful certificates with CertiGen! 🎓✨
-
-```
-
-This README gives an overview of the app's features, how to get started, and information about the developer.
-```
-````
