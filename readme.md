@@ -1,5 +1,3 @@
-Here's a README for the Streamlit certificate generator web app, using markdown:
-
 🎉 CertiGen - Streamlit Certificate Generator Web App 🖼️
 
 CertiGen is a user-friendly web app built with Streamlit that allows you to easily generate certificates for your events or courses. Upload a template, customize the text, and generate certificates in bulk—all in a few clicks!
