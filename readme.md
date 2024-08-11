@@ -70,8 +70,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 CertiGen was developed by **Gashahun Woldeyohannes**. Gashahun is a passionate developer with a focus on web development and data science. Connect with him on:
 
 - [LinkedIn](https://www.linkedin.com/in/gashahun-woldeyohannes)
-- [GitHub](https://github.com/GashahunWoldeyohannes)
-- [Twitter](https://twitter.com/GashahunW)
+- [GitHub](https://github.com/gashu-101)
 
 ## 📚 Additional Resources
 
