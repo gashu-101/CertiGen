@@ -1,11 +1,10 @@
 Here's a README for the Streamlit certificate generator web app, using markdown:
 
-````markdown
-# 🎉 CertiGen - Streamlit Certificate Generator Web App 🖼️
+🎉 CertiGen - Streamlit Certificate Generator Web App 🖼️
 
 CertiGen is a user-friendly web app built with Streamlit that allows you to easily generate certificates for your events or courses. Upload a template, customize the text, and generate certificates in bulk—all in a few clicks!
 
-## 🚀 Features
+🚀 Features
 
 - **Upload Certificate Template**: Start by uploading your custom certificate background.
 - **Text Customization**: Choose the font, size, color, and position for the text on the certificate.
@@ -13,7 +12,7 @@ CertiGen is a user-friendly web app built with Streamlit that allows you to easi
 - **Preview & Generate**: Preview how the certificates will look before generating them.
 - **Download**: Download all the generated certificates as a ZIP file.
 
-## 🛠️ How to Use
+🛠️ How to Use
 
 ### Prerequisites
 
@@ -23,6 +22,7 @@ CertiGen is a user-friendly web app built with Streamlit that allows you to easi
   ```bash
   pip install streamlit pillow pandas openpyxl
   ```
+
 ````
 
 ### Running the App
@@ -86,3 +86,4 @@ Enjoy creating beautiful certificates with CertiGen! 🎓✨
 
 This README gives an overview of the app's features, how to get started, and information about the developer.
 ```
+````
