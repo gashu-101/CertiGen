@@ -77,15 +77,11 @@ def about():
     # Developer image
     st.image("https://via.placeholder.com/400x400.png?text=Developer+Image", use_column_width=True)
     
-    # Social links
+
     st.markdown("### Connect with me:")
-    col1, col2, col3 = st.columns(3)
+    col1 = st.columns(1)
     with col1:
         st.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/gashahun-woldeyohannes)")
-    with col2:
-        st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/GashahunWoldeyohannes)")
-    with col3:
-        st.markdown("[![Twitter](https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter)](https://twitter.com/GashahunW)")
 
     # Additional information
     st.markdown("### More About Me:")
