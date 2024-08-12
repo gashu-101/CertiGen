@@ -3,8 +3,6 @@ from PIL import Image, ImageDraw, ImageFont
 import pandas as pd
 from io import BytesIO
 import zipfile
-import os
-import openpyxl
 
 # Function to generate certificates
 def generate_certificate(template, names, font_path, font_size, color, y_position):
@@ -50,7 +48,7 @@ def home():
     st.write("2. **Customize Text Style**: Choose the font, size, and color to match your theme.")
     st.image("2.png", use_column_width=True)
     
-    st.write("3. **Add Names from a File**: Easily upload a CSV or Excel file with the names of your participants.")
+    st.write("3. **Add Names from a File**: Easily upload a CSV file with the names of your participants.")
     st.image("3.png", use_column_width=True)
     
     st.write("4. **Preview and Generate**: Preview the certificates and generate them with a single click.")
@@ -118,13 +116,10 @@ def certificate_generator():
             font_size = st.number_input("Font Size", min_value=10, max_value=300, value=100)
             color = st.color_picker("Text Color", "#000000")
             color = tuple(int(color.lstrip("#")[i:i+2], 16) for i in (0, 2, 4))
-            names_file = st.file_uploader("Upload Names File (CSV/Excel)", type=["csv", "xlsx"])
+            names_file = st.file_uploader("Upload Names File (CSV)", type=["csv"])
             if names_file:
                 try:
-                    if names_file.name.endswith(".csv"):
-                        df = pd.read_csv(names_file)
-                    else:
-                        df = pd.read_excel(names_file)
+                    df = pd.read_csv(names_file)
                     names = df.iloc[:, 0].tolist()
                     y_position = st.slider("Y Position", min_value=0, max_value=template.height, value=int(template.height / 2))
                     st.subheader("Preview Certificate")
