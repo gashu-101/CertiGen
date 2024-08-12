@@ -5,7 +5,7 @@ from io import BytesIO
 import zipfile
 
 # Function to generate certificates
-def generate_certificate(template, names, font_path, font_size, color, y_position):
+def generate_certificate(template, names, font_path, font_size, color, x_position, y_position):
     font = ImageFont.truetype(font_path, font_size)
     certificates = []
 
@@ -15,9 +15,7 @@ def generate_certificate(template, names, font_path, font_size, color, y_positio
         text_bbox = draw.textbbox((0, 0), name, font=font)
         text_width = text_bbox[2] - text_bbox[0]
         text_height = text_bbox[3] - text_bbox[1]
-        pos_x = template.width / 2
-        pos_y = y_position
-        text_position = (pos_x - text_width / 2, pos_y - text_height / 2)
+        text_position = (x_position - text_width / 2, y_position - text_height / 2)
         draw.text(text_position, name, font=font, fill=color)
         certificates.append((name, certificate))
 
@@ -122,12 +120,13 @@ def certificate_generator():
                     df = pd.read_csv(names_file)
                     names = df.iloc[:, 0].tolist()
                     y_position = st.slider("Y Position", min_value=0, max_value=template.height, value=int(template.height / 2))
+                    x_position = st.slider("X Position", min_value=0, max_value=template.width, value=int(template.width / 2))
                     st.subheader("Preview Certificate")
                     preview_name = st.selectbox("Select Name for Preview", names)
-                    preview_certificate = generate_certificate(template, [preview_name], font_path, font_size, color, y_position)[0][1]
+                    preview_certificate = generate_certificate(template, [preview_name], font_path, font_size, color, x_position, y_position)[0][1]
                     st.image(preview_certificate)
                     if st.button("Generate Certificates"):
-                        certificates = generate_certificate(template, names, font_path, font_size, color, y_position)
+                        certificates = generate_certificate(template, names, font_path, font_size, color, x_position, y_position)
                         progress_bar = st.progress(0)
                         for i, (name, _) in enumerate(certificates):
                             progress_bar.progress((i + 1) / len(certificates))
