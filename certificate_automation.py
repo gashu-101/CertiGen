@@ -77,7 +77,6 @@ def about():
     # Developer image
     st.image("https://via.placeholder.com/400x400.png?text=Developer+Image", use_column_width=True)
     
-
     st.markdown("### Connect with me:")
     col1 = st.columns(1)
     with col1:
