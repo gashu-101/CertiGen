@@ -61,10 +61,6 @@ def home():
     st.write("✅ **Customizable**: Tailor the look and feel to your needs.")
     st.write("✅ **User-Friendly**: Easy-to-use interface for everyone.")
     
-    # Additional resources
-    st.markdown("### 📚 Resources:")
-    st.write("Check out the [documentation](#) for detailed instructions and tips.")
-    st.write("Need help? Visit our [support page](#) or contact us at [support@example.com](mailto:support@example.com).")
 
     # Final Touch
     st.markdown("### 🚀 Ready to Get Started?")
@@ -139,7 +135,7 @@ def certificate_generator():
 # Main function to control the navigation
 def main():
     st.sidebar.title("Navigation")
-    page = st.sidebar.selectbox("Go to", ["Home", "About", "Certificate Generator"])
+    page = st.sidebar.selectbox("Go to", ["Home", "About", "Certificate Generator"], index=2)  # Default to "Certificate Generator"
 
     if page == "Home":
         home()
