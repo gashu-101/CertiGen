@@ -8,7 +8,7 @@ CertiGen is a user-friendly web app built with Streamlit that allows you to easi
 - **Text Customization**: Choose the font, size, color, and position for the text on the certificate.
 - **Name Input**: Upload a CSV or Excel file with the names of the participants.
 - **Preview & Generate**: Preview how the certificates will look before generating them.
-- **Download**: Download all the generated certificates as a ZIP file.
+- **Download**: Download all the generated certificate as a ZIP file.
 
 🛠️ How to Use
 
